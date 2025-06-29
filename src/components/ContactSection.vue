@@ -3,15 +3,18 @@
     <h2>Contacto</h2>
     <form class="contact-form" @submit.prevent>
       <div class="form-row">
-        <input type="text" placeholder="Nombre" required />
+        <label for="nombre_input">Nombre</label>
+        <input type="text" placeholder="Nombre" id="nombre_input" required />
       </div>
       <div class="form-row">
-        <input type="email" placeholder="Email" required />
+        <label for="email_input">Correo</label>
+        <input type="email" placeholder="Email" id="email_input" required />
       </div>
       <div class="form-row">
-        <textarea placeholder="Mensaje" rows="5" required></textarea>
+        <label for="mensaje_input">Mensaje</label>
+        <textarea placeholder="Mensaje" rows="5" id="mensaje_input" required></textarea>
       </div>
-      <button type="submit">Enviar</button>
+      <button type="submit">Enviar mensaje</button>
     </form>
   </section>
 </template>
@@ -24,8 +27,9 @@
   text-align: center;
 }
 .contact-section h2 {
-  font-size: 2rem;
-  color: var(--color-principal);
+  font-size: 28px;
+  color: #010101;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 .contact-form {
@@ -35,13 +39,19 @@
 }
 .form-row {
   width: 100%;
+  text-align: left;
 }
+
+.form-row > label{
+  color: #010101;
+}
+
 input, textarea {
   width: 100%;
   padding: 0.9rem 1.1rem;
-  border: 1.5px solid #e0e0e0;
-  border-radius: 1rem;
-  font-size: 1rem;
+  border: 1.5px solid #D0D0D0;
+  border-radius: 9px;
+  font-size: 12px;
   font-family: 'Exo 2', Arial, Helvetica, sans-serif;
   outline: none;
   transition: border 0.2s;

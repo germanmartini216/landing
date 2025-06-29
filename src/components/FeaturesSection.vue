@@ -1,11 +1,10 @@
 <template>
   <section class="features-section" id="caracteristicas">
-    <h2>Marvelous Features</h2>
-    <p class="features-sub">Placerat in egestas erat...</p>
+    <h2>Características que nos destacan</h2>
     <div class="features-grid">
       <div class="feature-card" v-for="feature in features" :key="feature.title">
         <div class="feature-icon" :style="{background: feature.bg}">
-          <i :class="feature.icon"></i>
+          <img :src="feature.icon" alt="imagen icono" />
         </div>
         <h3>{{ feature.title }}</h3>
         <p>{{ feature.desc }}</p>
@@ -16,15 +15,14 @@
 
 <script setup>
 const features = [
-  { icon: 'pi pi-check-square', title: 'Easy to Use', desc: 'Mauris ac malesuada pellentesque massa est.', bg: '#fffbe6' },
-  { icon: 'pi pi-palette', title: 'Fresh Design', desc: 'Suspendisse euismod, nisi eu hendrerit.', bg: '#f3f8ff' },
-  { icon: 'pi pi-book', title: 'Well Documented', desc: 'Curabitur non nulla sit amet nisl tempus.', bg: '#f6f6ff' },
-  { icon: 'pi pi-desktop', title: 'Responsive Layout', desc: 'Nulla malesuada pellentesque massa est.', bg: '#e6fff7' },
-  { icon: 'pi pi-code', title: 'Clean Code', desc: 'Condimentum facilisis convallis varius.', bg: '#fff6f6' },
-  { icon: 'pi pi-moon', title: 'Dark Mode', desc: 'Curabitur non nulla sit amet nisl laoreet.', bg: '#f6f6ff' },
-  { icon: 'pi pi-check', title: 'Ready to Use', desc: 'Mauris ac malesuada massa vitae.', bg: '#e6fff7' },
-  { icon: 'pi pi-cog', title: 'Modern Practices', desc: 'Etiam malesuada bibendum mollis.', bg: '#f3f8ff' },
-  { icon: 'pi pi-shield', title: 'Privacy', desc: 'Nunc eget sapien et magna pharetra.', bg: '#fffbe6' },
+  { icon: '/src/assets/img_iconos/icon_img_1.png', title: 'Creá tu cuenta gratis', desc: 'Actualiza tu currículum con vista previa en vivo y formato instantáneo.', bg: '#fffbe6' },
+  { icon: '/src/assets/img_iconos/icon_img_2.png', title: 'Fresh Design', desc: 'Elige entre plantillas modernas y profesionales que son fáciles de personalizar.', bg: '#f3f8ff' },
+  { icon: '/src/assets/img_iconos/icon_img_3.png', title: 'Exportá con un clic', desc: 'Descarga tu currículum al instante como un PDF de alta calidad con un solo clic.', bg: '#f6f6ff' },
+  { icon: '/src/assets/img_iconos/icon_img_4.png', title: 'Edición fácil', desc: 'Actualiza tu currículum con vista previa en vivo y formato instantáneo.', bg: '#e6fff7' },
+  { icon: '/src/assets/img_iconos/icon_img_5.png', title: 'Postulaciones', desc: 'Presentate como postulante para aquellos avisos de tu interes', bg: '#fff6f6' },
+  { icon: '/src/assets/img_iconos/icon_img_6.png', title: 'Creá avisos laborales', desc: 'Publicá avisos laborales y recibí postulantes.', bg: '#f6f6ff' },
+  { icon: '/src/assets/img_iconos/icon_img_7.png', title: 'Soporte', desc: 'Tené atención técnica constante sobre nuestros servicios', bg: '#e6fff7' },
+  { icon: '/src/assets/img_iconos/icon_img_8.png', title: 'Inteligencia artificial', desc: 'Utilizá nuestra Inteligencia artificial para mejorar tu curriculum.', bg: '#f3f8ff' },
 ];
 </script>
 
@@ -36,9 +34,10 @@ const features = [
   text-align: center;
 }
 .features-section h2 {
-  font-size: 2rem;
-  color: #222;
-  margin-bottom: 0.3rem;
+  font-size: 26px;
+  color: #010101;
+  font-weight:600;
+  margin-bottom: 16px;
 }
 .features-sub {
   color: #888;
@@ -50,17 +49,17 @@ const features = [
   gap: 1.5rem;
 }
 .feature-card {
-  background: #fff;
-  border-radius: 1.2rem;
-  box-shadow: 0 2px 12px rgba(33,145,80,0.04);
+  background: #E7F8F4;
+  border-radius: 12px;
+  box-shadow: 1px 5px 8px rgba(1, 1, 1, 0.16);
   padding: 2rem 1.2rem 1.5rem 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: box-shadow 0.2s, transform 0.1s;
 }
 .feature-card:hover {
-  box-shadow: 0 6px 24px rgba(33,145,80,0.10);
+  box-shadow: 1px 5px 16px rgba(1, 1, 1, 0.16);
   transform: translateY(-4px) scale(1.03);
 }
 .feature-icon {
@@ -74,14 +73,20 @@ const features = [
   margin-bottom: 1.1rem;
   color: var(--color-principal);
 }
+
+.feature-icon img{
+  width:80px;
+  height: auto;
+}
+
 .feature-card h3 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: var(--color-principal);
+  color: #010101;
 }
 .feature-card p {
-  color: #666;
-  font-size: 0.98rem;
+  color: #2E2E2E;
+  font-size: 12px;
 }
 </style> 

@@ -1,9 +1,9 @@
 <template>
   <section class="hero-section" id="inicio">
     <div class="hero-content">
-      <h1>Eu sem integer<br><span>eget magna fermentum</span></h1>
-      <p>Sed blandit libero volutpat sed cras. Fames ac turpis egestas integer. Placerat in egestas erat...</p>
-      <a href="#" class="hero-btn">Get Started</a>
+      <h1>Diseñá el curriculum vitae <br><span>que tu talento merece.</span></h1>
+      <p>Haz un Curriculum en minutos con nuestro inteligente e intuitivo constructor de Curriculums.</p>
+      <a href="https://www.potentia.com.ar" target="_blank" class="hero-btn">Empezar aquí.</a>
     </div>
     <div class="hero-img">
       <img src="https://primefaces.org/cdn/primevue/images/sakai/hero.png" alt="Dashboard" />
@@ -13,19 +13,17 @@
 
 <style scoped>
 .hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(90deg, #e0ffe7 0%, #f0fff4 100%);
-  border-radius: 0 0 2.5rem 2.5rem;
+  display: block;
+  background-color: #EAF8F9;
   padding: 3.5rem 2rem 2.5rem 2rem;
   margin-bottom: 2.5rem;
-  min-height: 420px;
+  width: 100%;
+  max-height: 420px;
   position: relative;
   overflow: hidden;
 }
 .hero-content {
-  max-width: 520px;
+  width: 100%;
   z-index: 1;
 }
 .hero-content h1 {

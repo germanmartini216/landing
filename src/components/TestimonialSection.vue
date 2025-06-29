@@ -2,15 +2,10 @@
   <section class="testimonial-section">
     <div class="testimonial-content">
       <div class="testimonial-text">
-        <h4>Joséphine Miller</h4>
-        <span>Peak Interactive</span>
+        <h4>Transformá tu historia en oportunidades</h4>
         <blockquote>
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          Nuestra IA esta preparada para ayudarte a destacar lo mejor de vos. En minutos, generás un CV profesional, optimizado y personalizado según tu perfil, experiencia y el tipo de trabajo que buscás. Potenciá tu búsqueda laboral con tecnología que entiende quién sos y hacia dónde querés ir.
         </blockquote>
-      </div>
-      <div class="testimonial-logo">
-        <img src="https://primefaces.org/cdn/primevue/images/sakai/peak.svg" alt="Peak Logo" />
-        <span>Peak</span>
       </div>
     </div>
   </section>
@@ -18,7 +13,8 @@
 
 <style scoped>
 .testimonial-section {
-  background: linear-gradient(90deg, #e0ffe7 0%, #f0fff4 100%);
+  background-image: url("./src/assets/bg_nodos_blanco.png");
+  background-color: #F79B38 ;
   border-radius: 1.5rem;
   margin: 0 auto 2.5rem auto;
   max-width: 900px;
@@ -33,23 +29,26 @@
   gap: 1.2rem;
 }
 .testimonial-text h4 {
-  color: var(--color-principal);
+  color: #fff;
+  text-shadow: 0px 2px 15px rgba(0,0,0,0.6);
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
 }
 .testimonial-text span {
-  color: #888;
+  color: #fff;
+  text-shadow: 0px 2px 15px rgba(0,0,0,0.6);
   font-size: 1rem;
   margin-bottom: 1.1rem;
   display: block;
 }
 .testimonial-text blockquote {
-  font-size: 1.08rem;
-  color: #222;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6);
   font-style: italic;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 720px;
   line-height: 1.5;
 }
 .testimonial-logo {

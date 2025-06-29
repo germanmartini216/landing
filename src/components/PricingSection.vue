@@ -1,20 +1,20 @@
 <template>
   <section class="pricing-section" id="precios">
-    <h2>Precios Inigualables</h2>
-    <p class="pricing-sub">Amet consectetur adipiscing elit...</p>
+    <h2>Nuestros planes y pagos</h2>
+    <p class="pricing-sub">Precios inigualables mensuales</p>
     <div class="pricing-grid">
       <div class="pricing-card" v-for="plan in plans" :key="plan.title" :class="{ featured: plan.featured }">
         <div class="pricing-img">
-          <img :src="plan.img" :alt="plan.title" />
         </div>
         <h3>{{ plan.title }}</h3>
-        <div class="price">${{ plan.price }}<span>/ por mes</span></div>
+        <div class="price">${{ plan.price }}<span>/ mensual</span></div>
         <ul>
           <li v-for="feature in plan.features" :key="feature">
             <i class="pi pi-check"></i> {{ feature }}
           </li>
         </ul>
         <a href="#contacto" class="pricing-btn">Contactar</a>
+        <a href="#more-info" class="pricing-btn secundary">Ver todo</a>
       </div>
     </div>
   </section>
@@ -25,36 +25,33 @@ const plans = [
   {
     title: 'Gratis',
     price: 0,
-    img: 'https://primefaces.org/cdn/primevue/images/sakai/pricing-free.svg',
     features: [
-      'Diseño Responsivo',
-      'Mensajes Push Ilimitados',
-      '50 Tickets de Soporte',
-      'Envío Gratis',
+      'Alta de la cuenta',
+      '2 plantillas disponibles',
+      'Editar plantilla gratis',
+      'Exportar gratis',
     ],
     featured: false,
   },
   {
-    title: 'Startup',
-    price: 1,
-    img: 'https://primefaces.org/cdn/primevue/images/sakai/pricing-startup.svg',
+    title: 'Escencial',
+    price: 100,
     features: [
-      'Diseño Responsivo',
-      'Mensajes Push Ilimitados',
-      '50 Tickets de Soporte',
-      'Envío Gratis',
+      'Alta de la cuenta',
+      'Todas las plantillas',
+      'Editar todas plantilla',
+      'Exportar',
     ],
     featured: true,
   },
   {
-    title: 'Empresa',
-    price: 5,
-    img: 'https://primefaces.org/cdn/primevue/images/sakai/pricing-enterprise.svg',
+    title: 'Plus',
+    price: 200,
     features: [
-      'Diseño Responsivo',
-      'Mensajes Push Ilimitados',
-      '50 Tickets de Soporte',
-      'Envío Gratis',
+      'Alta de la cuenta',
+      'Todas las plantillas',
+      'Editar todas plantilla',
+      'Crear avisos',
     ],
     featured: false,
   },
@@ -85,18 +82,20 @@ const plans = [
 }
 .pricing-card {
   background: #fff;
-  border-radius: 1.2rem;
-  box-shadow: 0 2px 12px rgba(33,145,80,0.04);
+  border-radius: 12px;
+  box-shadow: 0 4px 48px rgba(1, 1, 1, 0.15);
   padding: 2.2rem 1.5rem 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
   border: 2px solid transparent;
+  width: 100%;
+  max-width: 290px;
 }
 .pricing-card.featured {
-  border: 2px solid var(--color-principal);
-  box-shadow: 0 6px 24px rgba(33,145,80,0.10);
+  border: 2px solid #05AB9E;
+  box-shadow: 0 4px 48px rgba(1, 1, 1, 0.15);
   transform: scale(1.04);
 }
 .pricing-img img {
@@ -104,7 +103,7 @@ const plans = [
   margin-bottom: 1.2rem;
 }
 .pricing-card h3 {
-  font-size: 1.2rem;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-principal);
@@ -152,5 +151,15 @@ const plans = [
 }
 .pricing-btn:hover {
   background: var(--color-secundario);
+}
+
+.secundary{
+  background-color: #fff;
+  color: #05ab9e;
+  margin-top: 7px;
+}
+
+.secundary:hover {
+  background-color: #fff;
 }
 </style> 

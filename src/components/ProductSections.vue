@@ -2,22 +2,24 @@
   <section class="product-section" id="productos">
     <div class="product-block">
       <div class="product-img product-img-mobile">
-        <img src="../assets/chica.jpg" alt="Chica" />
+        <img src="../assets/chica.png" alt="Chica" />
       </div>
       <div class="product-info">
-        <h3>Powerful Everywhere</h3>
-        <p>Amet consectetur adipiscing elit...</p>
-        <h4>Conque Quisque Egestas</h4>
-        <p>Lectus arcu bibendum at varius vel pharetra vel turpis nunc. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Sit amet mattis vulputate enim nulla aliquet.</p>
+        <h3>Nuestras Plantillas</h3>
+        <p>Contamos con una variedad de plantillas de currículum diseñadas para destacar tu perfil profesional de forma clara, moderna y efectiva. Cada una está optimizada para resaltar tus fortalezas y adaptarse a diferentes industrias y niveles de experiencia.</p>
+        <h4>Elegí el diseño que mejor hable de vos</h4>
+        <p>Desde estilos más formales hasta opciones creativas, nuestras plantillas se adaptan a tu personalidad y objetivos. Solo completá tus datos, y PotentIA se encarga del resto.</p>
       </div>
     </div>
     <div class="product-block reverse">
       <div class="product-info">
-        <h4>Celerisque Eu Ultrices</h4>
-        <p>Adipiscing commodo elit at imperdiet dui. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Suspendisse in est ante in. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi.</p>
+        <h3>Probá nuestra IA</h3>
+        <p>Con solo responder algunas preguntas, nuestra inteligencia artificial analiza tus respuestas, identifica tus fortalezas y genera un perfil profesional que resalta lo mejor de vos. Es rápido, simple y pensado para ayudarte a destacarte frente a los empleadores.</p>
+        <h4>Descubrí tu potencial en minutos</h4>
+        <p>Nuestra IA transforma tus habilidades y experiencias en un resumen profesional claro y poderoso. Ideal para quienes no saben por dónde empezar o quieren optimizar su CV con ayuda inteligente.</p>
       </div>
       <div class="product-img product-img-laptop">
-        <img src="../assets/robot.jpg" alt="Robot" />
+        <img src="../assets/robot.png" alt="Robot" />
       </div>
     </div>
   </section>
@@ -39,7 +41,8 @@
   background: #fff;
   border-radius: 1.5rem;
   box-shadow: 0 2px 12px rgba(33,145,80,0.04);
-  padding: 2.5rem 2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 48px rgba(1, 1, 1, 0.15);
 }
 .product-block.reverse {
   flex-direction: row-reverse;
@@ -51,29 +54,25 @@
   align-items: center;
 }
 .product-img-mobile img {
-  width: 260px;
-  max-width: 40vw;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 24px rgba(33,145,80,0.08);
+  width: 310px;
 }
 .product-img-laptop img {
   width: 340px;
-  max-width: 45vw;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 24px rgba(33,145,80,0.08);
 }
 .product-info {
   flex: 2;
   min-width: 220px;
 }
 .product-info h3 {
-  color: #219150;
-  font-size: 1.5rem;
+  color: #05AB9E;
+  font-size: 22px;
+  font-weight: 800;
   margin-bottom: 0.7rem;
 }
 .product-info h4 {
-  color: #222;
-  font-size: 1.1rem;
+  color: #010101;
+  font-size: 16px;
+  font-weight:600;
   margin-bottom: 0.5rem;
 }
 .product-info p {

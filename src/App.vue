@@ -23,7 +23,7 @@ import ContactSection from './components/ContactSection.vue'
       <TestimonialSection />
       <ProductSections />
       <PricingSection />
-      <GallerySection />
+      <!-- <GallerySection /> -->
       <ContactSection />
       <FooterSection />
     </div>
@@ -80,9 +80,9 @@ body {
   overflow-x: hidden;
 }
 .main-container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem 2.5rem 1.5rem;
+  padding: 0;
   background: #fff;
   box-sizing: border-box;
 }
