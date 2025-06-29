@@ -21,7 +21,7 @@
         <li><a href="#caracteristicas" @click="closeMenu">Características</a></li>
         <li><a href="#productos" @click="closeMenu">Productos</a></li>
         <li><a href="#precios" @click="closeMenu">Precios</a></li>
-        <li><a href="#galeria" @click="closeMenu">Galería</a></li>
+
       </ul>
       <div class="navbar-actions">
         <a href="#contacto" class="contact-btn" @click="closeMenu">Contacto</a>

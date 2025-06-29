@@ -5,9 +5,6 @@
       <p>Haz un Curriculum en minutos con nuestro inteligente e intuitivo constructor de Curriculums.</p>
       <a href="https://www.potentia.com.ar" target="_blank" class="hero-btn">Empezar aquí.</a>
     </div>
-    <div class="hero-img">
-      <img src="https://primefaces.org/cdn/primevue/images/sakai/hero.png" alt="Dashboard" />
-    </div>
   </section>
 </template>
 
